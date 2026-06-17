@@ -4,9 +4,11 @@ import jakarta.persistence.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 import java.time.LocalDateTime;
+import lombok.Data;
 import java.util.List;
 
 @Entity
+@Data
 @Table(name = "users")
 public class User {
 	@Id
